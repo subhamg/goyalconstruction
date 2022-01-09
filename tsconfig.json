@@ -12,7 +12,32 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": "./src" ,
+    "paths": {
+      "@siteOptions": ["siteOptions"],
+      "@siteConfig": ["siteConfig"],
+      "@mediaConfig": ["mediaConfig"],
+      "@appConfig": ["appConfig"],
+      "@routesConfig": ["routesConfig"],
+      "@lib/*": ["lib/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
+      "@dashboard/*": ["pages/dashboard/*"],
+      "@components/*": ["components/*"],
+      "@common/*": ["components/common/*"],
+      "@icons/*": ["components/icons/*"],
+      "@effects/*": ["components/effects/*"],
+      "@helpers/*": ["components/helpers/*"],
+      "@meta/*": ["components/meta/*"]
+    },
+    "typeRoots": [
+      /* List of folders to include type definitions from. */
+      "./types",
+      "node_modules/@types"
+    ],
+    
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
